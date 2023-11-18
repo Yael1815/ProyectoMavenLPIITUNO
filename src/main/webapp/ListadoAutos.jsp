@@ -11,6 +11,8 @@
 <body>
 <h1 align="center">
 Listado de Autos</h1>
+<h2 align="center">Registrar nuevo</h2>
+<a href="ControladorAuto">Registrar</a>
 <table align="center">
 <tr>
 <th>Codigo</th>

@@ -32,6 +32,16 @@ public class ControladorAuto extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		//intanciamos la respectiva clase..
+		
+		String accion=request.getParameter("accion");
+		if(accion!=null){
+			switch(accion){
+			case "registrar":
+				//redireccionamos al frmregistrar
+				request.getRequestDispatcher("FrmRegistra.jsp").forward(request,response);
+			}
+		}
+	
 		ClassCrudAuto cruauto=new ClassCrudAuto();
 		TblAuto tblauto=new TblAuto();
 		//enviamos a la vista
